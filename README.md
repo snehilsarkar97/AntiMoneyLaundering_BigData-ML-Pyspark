@@ -57,10 +57,10 @@ This project leverages Spark ML to analyze and detect patterns of money launderi
 All code files are available in this repository. For a step-by-step breakdown of code and model execution, please refer to the Project Tutorial.
 
 ## Results
-The Gradient Boosted Tree model demonstrated the best performance, with high Recall and AUC scores, proving valuable in enhancing detection capabilities for AML systems. Feature importance analysis highlights key features, aiding in interpretability and real-world applications.
-
-## License
-This project is licensed under the MIT License.
+- The Gradient Boosted Tree model with Train-Validation Split proved most effective for detecting money laundering, achieving high recall and AUC. This model choice prioritized minimizing false negatives, as their implications are more severe than false positives.
+- Ratio of Laundering to Non Laundering Case appear to be 1:900 in High Medium IL Dataset.
+- The 'Payment Format' feature was the most significant predictor of money laundering, followed by the originating bank(for best model).
+- ACH transactions were frequently associated with illicit activity, while reinvestment and wire transfers showed no indications of money laundering in this dataset.
 
 ## Contact Information
 For questions or feedback, please contact:
